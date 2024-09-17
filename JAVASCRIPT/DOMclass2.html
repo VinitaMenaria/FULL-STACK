@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events Practice</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #333;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button, input, select {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+#event-box {
+    width: 100%;
+    height: 100px;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #ccc;
+    outline: none;
+    margin-top: 10px;
+}
+
+#resize-msg {
+    color: #888;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JavaScript Events Practice</h1>
+    </header>
+
+    <main>
+        <!-- Button Events Section -->
+        <section id="buttons-section">
+            <h2>Button Events</h2>
+            <button id="click-btn">Click Me</button>
+            <button id="dblclick-btn">Double Click Me</button>
+            <button id="mouseover-btn">Hover Over Me</button>
+            <button id="mouseout-btn">Hover Out of Me</button>
+            <button id="contextmenu-btn">Right Click Me</button>
+        </section>
+
+        <!-- Input Events Section -->
+        <section id="input-section">
+            <h2>Input Events <span>this is a heading</span></h2>
+            <input type="text" id="input-field" placeholder="Type something..." />
+            <input type="text" id="focus-field" placeholder="Focus on me..." />
+            <input type="text" id="blur-field" placeholder="Blur from me..." />
+            <select id="select-field">
+                <option value="">Select an option...</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+            <button id="submit-btn">Submit</button>
+        </section>
+
+        <!-- Key Events Section -->
+        <section id="key-events-section">
+            <h2>Key Events</h2>
+            <input type="text" id="keydown-field" placeholder="Keydown Event" />
+            <input type="text" id="keypress-field" placeholder="Keypress Event" />
+            <input type="text" id="keyup-field" placeholder="Keyup Event" />
+            <button id="myButton">Click Me!</button>
+        </section>
+
+        <!-- Other Events Section -->
+        <section id="other-events-section">
+            <h2>Other Events</h2>
+            <div id="event-box" tabindex="0">Focus and Key Events Box</div>
+            <p id="resize-msg">Resize the window to see the effect</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 JavaScript Events Practice</p>
+    </footer>
+
+    <script src="DOMclass2.js"></script>
+</body>
+</html>
