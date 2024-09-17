@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced E-Commerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#site-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: #fff;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+.container {
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Product List Styles */
+.product-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.product-price {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.add-to-cart {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #218838;
+}
+
+/* Shopping Cart Styles */
+#cart {
+    margin-top: 30px;
+    border-top: 2px solid #ccc;
+    padding-top: 20px;
+}
+
+#cart-title {
+    margin-top: 40px;
+}
+
+#cart-empty-message {
+    color: #888;
+    font-style: italic;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+#footer-text {
+    font-size: 14px;
+}
+
+</style>
+<body>
+    <header>
+        <div class="container">
+            <h1 id="site-title">My Enhanced Shop</h1>
+            <nav id="main-nav">
+                <a href="#" id="nav-home" class="nav-link">Home</a>
+                <a href="#" id="nav-shop" class="nav-link">Shop</a>
+                <a href="#" id="nav-cart" class="nav-link">Cart</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2 id="product-title">Products</h2>
+            <div class="product-list">
+                <div class="product" id="product-1">
+                    <h3 class="product-name">Product 1</h3>
+                    <p class="product-price">Price: $10.00</p>
+                    <button class="add-to-cart" id="add-product-1">Add to Cart</button>
+                </div>
+                <div class="product" id="product-2">
+                    <h3 class="product-name">Product 2</h3>
+                    <p class="product-price">Price: $15.00</p>
+                    <button class="add-to-cart" id="add-product-2">Add to Cart</button>
+                </div>
+                <div class="product" id="product-3">
+                    <h3 class="product-name">Product 3</h3>
+                    <p class="product-price">Price: $20.00</p>
+                    <button class="add-to-cart" id="add-product-3">Add to Cart</button>
+                </div>
+                <div class="product" id="product-4">
+                    <h3 class="product-name">Product 4</h3>
+                    <p class="product-price">Price: $25.00</p>
+                    <button class="add-to-cart" id="add-product-4">Add to Cart</button>
+                </div>
+                <!-- Add more products as needed -->
+            </div>
+
+            <h2 id="cart-title">Shopping Cart</h2>
+            <div id="cart">
+                <p id="cart-empty-message">No items in the cart.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p id="footer-text">&copy; 2024 My Enhanced Shop. All rights reserved.</p>
+        </div>
+    </footer>
+<!-- <script src="DOMclass1.js"></script> -->
+ <script src="DOMclass1.js"></script>
+    
+</body>
+</html>
