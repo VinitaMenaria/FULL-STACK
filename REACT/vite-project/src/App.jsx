@@ -1,17 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import UserCard from "./components/UserCard"
+import user from './assets/user.jpg'
+import flowers from './assets/flowers.jpeg'
+import pahad from './assets/pahad.jpeg'
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-        <p>
-          Hii! my name is vinita
-        </p>
-    </>
+    <div className="container">
+      <UserCard name='vinita' image={user} style={{borderRadius:"15px"}}/>
+      <UserCard  name='diya' image={flowers}  style={{borderRadius:"15px"}}/>
+      <UserCard name='shikha' image={pahad}  style={{borderRadius:"15px"}}/>   
+    </div>
+
   )
 }
 
