@@ -4,7 +4,7 @@ const StateLifting = (props) => {
   return (
     <div>
       <input type="text" onChange={(e)=>props.setName(e.target.value)}/>
-      <p><b>Name:</b>{props.name}</p>
+      <p><b>{props.title}</b>{props.name}</p>
     </div>
   )
 }

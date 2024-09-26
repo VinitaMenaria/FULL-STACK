@@ -38,7 +38,9 @@ const [name,setName]=useState('');
     <h1>{count}</h1>
   </Button> */}
 
-<StateLifting name={name} setName={setName} />
+<StateLifting  title='Card1' name={name} setName={setName} />
+<StateLifting title='Card2' name={name} setName={setName} />
+<p>I m parent component and name is {name}</p>
     </div>
 
   )
