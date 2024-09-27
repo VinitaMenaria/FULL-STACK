@@ -8,17 +8,22 @@ import Props from "./components/Props"
 import { useState } from "react"
 import Button from "./components/Button"
 import StateLifting from "./components/StateLifting"
+import Logout from "./components/Logout"
+import Login from "./components/Login"
+import Eventhanlding from "./components/EventhandLing"
 
 function App() {
 
-  const [count,setCount]=useState(0);
+  const [isLoggedIn,setLoggedIn]=useState(true); 
 
-  function handleClick(){
-    setCount(count+1);
-  }
+  // const [count,setCount]=useState(0);
+
+  // function handleClick(){
+  //   setCount(count+1);
+  // }
 
 // State lifting 
-const [name,setName]=useState('');
+// const [name,setName]=useState('');
 
   return (
     <div className="container">
@@ -38,9 +43,14 @@ const [name,setName]=useState('');
     <h1>{count}</h1>
   </Button> */}
 
-<StateLifting  title='Card1' name={name} setName={setName} />
+{/* <StateLifting  title='Card1' name={name} setName={setName} />
 <StateLifting title='Card2' name={name} setName={setName} />
-<p>I m parent component and name is {name}</p>
+<p>I m parent component and name is {name}</p> */}
+
+{/* {isLoggedIn?<Logout/>:<Login/>} */}
+
+  
+
     </div>
 
   )
